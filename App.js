@@ -2,9 +2,10 @@ import React from 'react';
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 
-import Carrinho from './src/telas/carrinho';
+import TelaPadrao from "./src/componentes/TelaPadrao/index";
+import Rotas from './src/rotas';
 
 
-export default function App(){
-  return <Carrinho/>; 
+export default function App() {
+  return <TelaPadrao><Rotas/></TelaPadrao> ;
 }

@@ -7,9 +7,9 @@ export default function StatusCarrinho({ Total }){
     return <View style={ estilos.conteudo }>
         <View style={ estilos.total }>
             <Text style={ estilos.descricao }>total do carrinho:</Text>
-            <Text Style={ estilos.valor }>
-                {
-                    Intl.NumberFormat('pt-Br',{ 
+            <Text style={ estilos.valor }>
+                { 
+                    Intl.NumberFormat('pt-Br', { 
                         style: 'currency', currency: 'BRL'
                     }).format(Total)
                 }

@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { FlatList } from 'react-native'
-import TelaPadrao from '../../componentes/TelaPadrao/Index';
+import { FlatList } from 'react-native';
 import Item from './Item';
 
-const Servicos = [ 
+const servicos = [ 
     {
         id : 1,
         nome:"Hamburguer",
@@ -12,32 +11,26 @@ const Servicos = [
         descricao:"Hamburguer dupplo bacon"
     },
     {   id : 2,
-        nome:"Milkshake",
+        nome:"milshisheishe",
         preco: 19.9,
-        descricao:"Milkshake de ovo maltine."
+        descricao:"milshisheishe de ovo Morango."
 
     },
     {
         id : 3,
-        nome:"Batata Grande",
-        preco: 15.9,
-        descricao:"Batata frita da melhor crocancia."
-    },
-    {
-        id : 4,
-        nome:"Batata Grande",
+        nome:"Batata Grande com cheddar",
         preco: 15.9,
         descricao:"Batata frita da melhor crocancia."
     }
 ];
 
-export default function servicos(){
-    return <TelaPadrao>
-                <FlatList data ={Servicos} 
+export default function Servicos(){
+    return <>
+                <FlatList data ={servicos} 
                 removeClippedSubviews={false}
                 renderItem={({item}) => <Item {...item} />}
                 keyExtractor={({id}) => String(id)}
                 />
-             </TelaPadrao>
+             </>
 }
 

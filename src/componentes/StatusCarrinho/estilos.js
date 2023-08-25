@@ -22,7 +22,7 @@ export default StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginVertical: 6,
-    color: cores.laranja,
+    color: cores.claro,
   },
   botao: {
     flexGrow: 1,
