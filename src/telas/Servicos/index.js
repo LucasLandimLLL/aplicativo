@@ -22,6 +22,12 @@ const Servicos = [
         nome:"Batata Grande",
         preco: 15.9,
         descricao:"Batata frita da melhor crocancia."
+    },
+    {
+        id : 4,
+        nome:"Batata Grande",
+        preco: 15.9,
+        descricao:"Batata frita da melhor crocancia."
     }
 ];
 
